@@ -34,7 +34,12 @@ public class SimpleListImpl implements SimpleList, Iterable {
         Element next;
     }
 
+
     class SimpleIteratorImpl implements Iterator{
+
+        private SimpleList filter(SimpleFilter filter){
+            return (SimpleList) filter;
+        }
 
         @Override
         public boolean hasNext() {
