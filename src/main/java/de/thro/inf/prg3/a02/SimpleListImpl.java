@@ -6,6 +6,9 @@ package de.thro.inf.prg3.a02;
  */
 public class SimpleListImpl implements SimpleList {
 
-	// TODO: Implement the required methods.
 
+    private static class Element{
+        Object item;
+        Element next;
+    }
 }
